@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="./js/attachFile.js"></script>
+		<script src="./js/sliider.js"></script>
+		<script src="./js/burger.js"></script>
+		<title>Test task</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__contaienr">
+				<img src="./img/logo.svg" class="header__logo" />
+
+				<nav class="header__nav max-sm-hide">
+					<a class="header__link header__link_active">business</a>
+					<a class="header__link">about</a>
+					<a class="header__link">prices</a>
+					<a class="header__link">to book</a>
+				</nav>
+
+				<div id="burgerToggle" class="header__burger-wrapper md-hide">
+					<div class="header__burger-line"></div>
+					<div class="header__burger-line"></div>
+					<div class="header__burger-line"></div>
+
+					<img
+						id="burgerCloseIcon"
+						class="header__burger-close"
+						src="./img/close.png"
+					/>
+				</div>
+
+				<nav id="burgerNav" class="header__burger-nav">
+					<a class="header__link header__link_active">business</a>
+					<a class="header__link">about</a>
+					<a class="header__link">prices</a>
+					<a class="header__link">to book</a>
+				</nav>
+			</div>
+		</header>
+
+		<section class="hero">
+			<div class="container">
+				<div class="padding-xl max-md-hide"></div>
+
+				<h1 class="hero__title">
+					<span class="hero__title_blue">Lorem ipsum</span>
+					dolor sit <br class="max-lg-hide" />
+					amet consectetur
+					<span class="hero__title_blue">adipiscing</span>
+				</h1>
+
+				<div class="margin-lg"></div>
+
+				<h4 class="hero__list-title">
+					At vero eos et accusamus et iusto odio dignissimos ducimus!
+				</h4>
+				<ul class="hero__list">
+					<li>Totam rem aperiam eaque ipsa</li>
+					<li>Sit voluptatem accusantium doloremque laudantium</li>
+					<li>Sed ut perspiciatis, unde omnis iste natus error</li>
+				</ul>
+
+				<div class="margin-lg"></div>
+
+				<div class="hero__buttons-wrapper">
+					<button class="button-blue">to book</button>
+					<button class="button-white">details</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="order">
+			<div class="padding-md"></div>
+			<div class="container">
+				<h2 class="order__title">
+					booking <span class="order__title_blue">an order</span>
+				</h2>
+				<div class="margin-sm"></div>
+				<p class="order__subtitle">
+					before you fill the form check out our scheme below pleace
+				</p>
+
+				<div class="margin-lg"></div>
+
+				<div class="order__steps">
+					<div>
+						<div class="order__step-circle">
+							<img src="./img/search.svg" />
+						</div>
+						<div class="margin-sm"></div>
+						<p class="order__step-label">Lorem ipsum dolor sit amet</p>
+
+						<img src="./img/dots.svg" class="order__step-dots" />
+					</div>
+
+					<div>
+						<div class="order__step-circle">
+							<img src="./img/percent.svg" />
+						</div>
+						<div class="margin-sm"></div>
+						<p class="order__step-label">Сonsecteturadipiscing elit</p>
+
+						<img src="./img/dots.svg" class="order__step-dots" />
+					</div>
+
+					<div>
+						<div class="order__step-circle">
+							<img src="./img/document.svg" />
+						</div>
+						<div class="margin-sm"></div>
+						<p class="order__step-label">Sed do eiusmod tempor</p>
+
+						<img src="./img/dots.svg" class="order__step-dots" />
+					</div>
+
+					<div>
+						<div class="order__step-circle">
+							<img src="./img/mail.svg" />
+						</div>
+						<div class="margin-sm"></div>
+						<p class="order__step-label">Esse cillum dolore eu fugiat</p>
+
+						<img src="./img/dots.svg" class="order__step-dots" />
+					</div>
+
+					<div>
+						<div class="order__step-circle">
+							<img src="./img/money.svg" />
+						</div>
+						<div class="margin-sm"></div>
+						<p class="order__step-label">
+							Excepteur sint occaecat cupidatat non proident
+						</p>
+					</div>
+				</div>
+
+				<div class="margin-lg"></div>
+
+				<form>
+					<div class="order__inputs-grid_top">
+						<div class="select-wrapper">
+							<select name="type" class="select">
+								<option value="" disabled selected>System type</option>
+								<option value="value_1">First type</option>
+								<option value="value_2">Second type</option>
+								<option value="value_3">Third type</option>
+								<option value="value_4">Forth type</option>
+							</select>
+						</div>
+						<div>
+							<input name="email" class="input" placeholder="Your Email" />
+						</div>
+						<div>
+							<input name="name" class="input" placeholder="Your Name" />
+						</div>
+					</div>
+
+					<div class="margin-sm"></div>
+
+					<div class="order__inputs-grid_bottom">
+						<div id="sliderContainer" class="slider">
+							<p>Sed ut perspiciatis, unde omnis iste natus</p>
+							<span id="sliderValue">0%</span>
+
+							<div class="margin-xs"></div>
+
+							<div id="sliderBase" class="base"></div>
+							<div id="sliderThumb" class="thumb"></div>
+
+							<input id="slider" name="percent" hidden />
+						</div>
+
+						<div>
+							<div id="attachFile" class="attach-file">
+								<img src="./img/document-black.svg" />
+								attach file
+							</div>
+							<input id="fileInput" name="file" hidden type="file" />
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="padding-md"></div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<p class="footer__rights max-sm-hide">
+					© 2018 «LoremIpsum.net» All rights reserved.
+				</p>
+
+				<div class="footer__divider max-sm-hide"></div>
+
+				<div class="footer__item">
+					<img class="footer-icon" src="./img/qiwi.png" />
+					QIWI Wallet
+				</div>
+
+				<div class="footer__item">
+					<img class="footer-icon" src="./img/yandex-money.png" />
+					Yandex Money
+				</div>
+
+				<div class="footer__item">
+					<img class="footer-icon" src="./img/web-money.png" />
+					Web Money
+				</div>
+
+				<div class="footer__divider max-sm-hide"></div>
+
+				<a class="footer__link max-sm-hide" href="mailto:info@ipsum228.com">
+					<img src="./img/mail-blue.png" /> info@ipsum228.com</a
+				>
+
+				<a class="footer__link max-sm-hide" href="">
+					<img src="./img/vk.png" /> Vkontakte
+				</a>
+
+				<div class="md-hide footer__mobile-links">
+					<a class="footer__link" href="mailto:info@ipsum228.com">
+						<img class="footer-icon" src="./img/mail-blue.png" />
+						info@ipsum228.com</a
+					>
+					<div class="margin-xs"></div>
+					<a class="footer__link" href="">
+						<img class="footer-icon" src="./img/vk.png" /> Vkontakte
+					</a>
+				</div>
+
+				<div class="margin-xs"></div>
+				<p class="footer__rights md-hide">
+					© 2018 «LoremIpsum.net» All rights reserved.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

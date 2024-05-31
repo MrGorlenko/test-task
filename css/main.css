@@ -1,0 +1,16 @@
+@import "../fonts/fonts.css";
+@import "./components.css";
+
+@import "./sections/header.css";
+@import "./sections/hero.css";
+@import "./sections/order.css";
+@import "./sections/footer.css";
+
+* {
+	font-family: "Lato";
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
